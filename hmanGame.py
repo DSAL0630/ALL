@@ -1,27 +1,38 @@
 print("Welcome to HangMan")
 myWord = "saphire"
-lList = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-sList = ["_", "_", "_", "_", "_", "_", "_"]
-print(sList)
-
+myString = "saphire"
+myList = list(myString)
+guessList = []
+for a in myList:
+	guessList.append("_")
+	
+print(guessList)
 while True:
+	if guessList == ['s', ]
 	letter = input("Type a letter: ")
 	if letter in myWord:
 		print("Letter is in the word")
 	elif letter == "s":
 		guessList[0] = "s"
-	elif letter == "s":
-		guessList[0] = "a"
-	elif letter == "s":
-		guessList[0] = "p"
-	elif letter == "s":
-		guessList[0] = "h"
-	elif letter == "s":
-		guessList[0] = "i"
-	elif letter == "s":
-		guessList[0] = "r"
-	elif letter == "s":
-		guessList[0] = "e"	
+		print(guessList)
+	elif letter == "a":
+		guessList[1] = "a"
+		print(guessList)
+	elif letter == "p":
+		guessList[2] = "p"
+		print(guessList)
+	elif letter == "h":
+		guessList[3] = "h"
+		print(guessList)
+	elif letter == "i":
+		guessList[4] = "i"
+		print(guessList)
+	elif letter == "r":
+		guessList[5] = "r"
+		print(guessList)
+	elif letter == "e":
+		guessList[6] = "e"
+		print(guessList)	
 	else:
 		print("Letter is not in the word")
 		
@@ -63,3 +74,25 @@ print(guessList)
 # so say the user types r for guess you would 
 guessList[1] = "r"
 print(guessList)
+
+secretWord = "christmas"
+secretWord = list(secretWord)
+hangmanList = ['''
++===+
+    |
+    |
+    |
+   ===''' , "second" , "Third" ]
+
+misses = 0
+
+while misses < 7:
+	guess = input("Guess a letter: ")
+	if guess in secretWord:
+		# loop through secretword and change my guesslist at the correct indexes
+		print("letter is in the word")
+	else:
+		misses += 1
+
+
+print("Game Over")
