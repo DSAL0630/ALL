@@ -1,0 +1,8 @@
+Num = input("Number 1: ")
+Num2 = input("Number 2: ")
+Num = int(Num)
+Num2 = int(Num2)
+print(Num + "+" + Num2 + "=" str(Num + Num2)
+print(Num - "-" - Num2 - "=" str(Num - Num2)
+print(Num * "*" * Num2 * "=" str(Num * Num2)
+print(Num / "/" / Num2 / "=" str(Num / Num2)
