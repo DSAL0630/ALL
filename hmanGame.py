@@ -3,16 +3,26 @@ myWord = "saphire"
 myString = "saphire"
 myList = list(myString)
 guessList = []
-for a in myList:
+for letter in myList:
 	guessList.append("_")
 	
 print(guessList)
+
+missedList = []
+for missed in myList:
+	missedList.append("_")
+print(missedList)
+
+
 while True:
-	if guessList == ['s', ]
+	if guessList == ['s', 'a', 'p', 'h', 'i', 'r', 'e']:
+		print("Good job you figured out the word!")
+		break
+		
 	letter = input("Type a letter: ")
 	if letter in myWord:
 		print("Letter is in the word")
-	elif letter == "s":
+	if letter == "s":
 		guessList[0] = "s"
 		print(guessList)
 	elif letter == "a":
@@ -36,63 +46,3 @@ while True:
 	else:
 		print("Letter is not in the word")
 		
-		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# How to turn a string into a list
-myString = "arizona"
-myList = list(myString)
-print(myList)
-
-# how to create a list with _ where the letters go
-guesslist = []
-for a in myList:
-	guessList.append("_")
-
-print(guessList)
-
-# how to replace a specific item in a list
-# so say the user types r for guess you would 
-guessList[1] = "r"
-print(guessList)
-
-secretWord = "christmas"
-secretWord = list(secretWord)
-hangmanList = ['''
-+===+
-    |
-    |
-    |
-   ===''' , "second" , "Third" ]
-
-misses = 0
-
-while misses < 7:
-	guess = input("Guess a letter: ")
-	if guess in secretWord:
-		# loop through secretword and change my guesslist at the correct indexes
-		print("letter is in the word")
-	else:
-		misses += 1
-
-
-print("Game Over")
