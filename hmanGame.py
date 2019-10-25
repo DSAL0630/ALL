@@ -8,17 +8,20 @@ for letter in myList:
 	
 print(guessList)
 
-missedList = []
-for missed in myList:
-	missedList.append("_")
-print(missedList)
-
 
 while True:
 	if guessList == ['s', 'a', 'p', 'h', 'i', 'r', 'e']:
 		print("Good job you figured out the word!")
 		break
-		
+	def display(HANGMANPICS, missedLetters):
+		print(HANGMANPICS[len(missedLetters)])
+		print()
+
+		print('missedLetters:', end=' ')
+		for letter in missedLetters:
+			print(letter, end=' ')
+		print()
+	
 	letter = input("Type a letter: ")
 	if letter in myWord:
 		print("Letter is in the word")
@@ -45,4 +48,67 @@ while True:
 		print(guessList)	
 	else:
 		print("Letter is not in the word")
-		
+
+HANGMANPICS = ['''  
+   +---+
+   |   |
+       |
+       |
+       |
+       |
+       |
+   ======= ''' , '''
+   
+   +---+
+   |   |
+   0   |
+       |
+       |
+       |
+       |
+   ======= ''' , '''
+
+   +---+
+   |   |
+   0   |
+   |   |
+       |
+       |
+       |
+   ======= ''' , '''
+
+   +---+
+   |   |
+   0   |
+  /|   |
+       |
+       |
+       |
+   ======= ''' , '''
+
+   +---+
+   |   |
+   0   |
+  /|\  |
+       |
+       |
+       |
+   ======= ''' , '''
+
+   +---+
+   |   |
+   0   |
+  /|\  |
+  /    |
+       |
+       |
+   ======= ''' , '''
+
+   +---+
+   |   |
+   0   |
+  /|\  |
+  / \  |
+       |
+       |
+   ======= ''']
